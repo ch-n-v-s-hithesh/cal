@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cal{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+    padding: 0 20px;
+}
+.cal .top{
+    margin-top: 30px;
+    width: 100%;
+    border: 5px solid #999;
+    background: #3333333f;
+    border-radius: 5px;
+    border-bottom: none;
+    border-bottom-left-radius:0 ;
+    font-size: 45px;
+    font-weight: 50;
+    color: white;
+    border-bottom-right-radius:0;
+    padding: 10px 20px;
+}
+.cal .screen{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    background: #3333333f;
+    border: 5px solid #999;
+    border-radius: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 10px;
+    font-size: 60px;
+    font-weight: 50;
+    color: white;
+    overflow: hidden;
+    border-top:none ;
+    border-top-left-radius:0;
+    border-top-right-radius: 0;
+}
+.cal .btn-cnt{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:12px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.cal .btn-cnt button{
+    width:88px;
+    outline: none;
+    border: 3px solid #999;
+    height: 80px;
+    background: #33333351;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 550;
+    cursor: pointer;
+    transition: all ease-in 0.3ms;
+    box-shadow: inset 5px 10px 15px grey;
+}
+.cal .btn-cnt .hi{
+    color: transparent;
+}
+.cal .btn-cnt button:active{
+    scale: 0.95
+}
